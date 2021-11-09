@@ -1,0 +1,123 @@
+
+/*动画结束后，就会变回最初的样式*/
+.animation_gradient {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: tw_sxy;
+  animation-duration: 5s;
+}
+//from代表从0开始，to是100%最终状态。
+@keyframes tw_sxy {
+  from {background-color: red; margin-left: 0px; width: 200px; height: 200px}
+  to {background-color: #DBDBDB; margin-left: 200px; width: 300px; height: 300px}
+}
+
+.animation_gradient_else_cut {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  animation-name: tw_sxy_else_cut;
+  animation-duration: 5s;
+}
+
+@keyframes tw_sxy_else_cut {
+  0% {background-color: red; margin-left: 0px; margin-top: 0px;}
+  20% {background-color: yellow; margin-left: 700px; margin-top: 0px;}
+  40% {background-color: green; margin-left: 700px; margin-top: 700px;}
+  60% {background-color: #DBDBDB; margin-left: 0px; margin-top: 700px;}
+  80% {background-color: black; margin-left: 350px; margin-top: 350px;}
+  100% {background-color: blueviolet; margin-left: 200px;}
+}
+
+/*动画的延迟效果*/
+.animation_delay {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px; margin-top: 0px;
+  background-color: red;
+  position: relative;
+  animation-name: delayname;
+  animation-duration: 4s;
+  animation-delay: -1s;
+}
+
+@keyframes delayname {
+  0% {background-color: red; margin-left: 0px; margin-top: 0px}
+  25% {background-color: yellow; margin-left: 200px; margin-top: 0px}
+  50% {background-color: blue; margin-left: 200px; margin-top: 200px}
+  75% {background-color: greenyellow; margin-left: 0px; margin-top: 200px}
+  100% {background-color: rebeccapurple; margin-left: 0px; margin-top: 0px}
+}
+
+/*动画的循环次数*/
+.animation_cycle {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px; margin-top: 0px;
+  background-color: red;
+  position: relative;
+  animation-name: cyclename;
+  animation-duration: 4s;
+  //animation-iteration-count: 2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cyclename {
+  0% {background-color: red; margin-left: 0px; margin-top: 0px}
+  25% {background-color: yellow; margin-left: 200px; margin-top: 0px}
+  50% {background-color: blue; margin-left: 200px; margin-top: 200px}
+  75% {background-color: greenyellow; margin-left: 0px; margin-top: 200px}
+  100% {background-color: rebeccapurple; margin-left: 0px; margin-top: 0px}
+}
+
+/*
+动画的方向
+animation-direction 可接受以下枚举值：
+1、normal - 正常的动画方向，默认值。
+2、reverse - 反方向。
+3、alternate - 动画先正常方向，然后反方向。  需要配合animation-iteration-count去使用，次数大于1。
+4、alternate-reverse - 动画先反方向，再正常方向播放。  需要配合animation-iteration-count去使用，次数大于1。
+*/
+.animation_direction {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px; margin-top: 0px;
+  background-color: red;
+  position: relative;
+  animation-name: directionname;
+  animation-duration: 4s;
+  //animation-iteration-count: 2;
+  animation-direction: reverse;
+}
+
+@keyframes directionname {
+  0% {background-color: red; margin-left: 0px; margin-top: 0px}
+  25% {background-color: yellow; margin-left: 200px; margin-top: 0px}
+  50% {background-color: blue; margin-left: 200px; margin-top: 200px}
+  75% {background-color: greenyellow; margin-left: 0px; margin-top: 200px}
+  100% {background-color: rebeccapurple; margin-left: 0px; margin-top: 0px}
+}
+
+/*动画的运动曲线
+animation-timing-function 属性可接受以下值：
+ease - 指定从慢速开始，然后加快，然后缓慢结束的动画（默认）
+linear - 规定从开始到结束的速度相同的动画
+ease-in - 规定慢速开始的动画
+ease-out - 规定慢速结束的动画
+ease-in-out - 指定开始和结束较慢的动画
+cubic-bezier(n,n,n,n) - 运行您在三次贝塞尔函数中定义自己的值
+*/
+.animation_curve {
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite ease-in-out;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}

@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/animation/index",
+          "pathName": "pages/animation/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/gradientelse",
+          "pathName": "pages/animation/gradientelse",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/delay",
+          "pathName": "pages/animation/delay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/index",
+          "pathName": "pages/animation/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
