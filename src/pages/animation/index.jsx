@@ -14,6 +14,7 @@ function Index() {
       {title: '动画的循环次数', routeUrl: '/pages/animation/cycle'},
       {title: '动画的播放方向', routeUrl: '/pages/animation/direction'},
       {title: '动画的速度曲线', routeUrl: '/pages/animation/curve'},
+      {title: '动画的填充样式', routeUrl: '/pages/animation/fill'},
     ])
   })
 

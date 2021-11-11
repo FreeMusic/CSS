@@ -8,6 +8,7 @@ export default {
     'pages/animation/cycle',
     'pages/animation/direction',
     'pages/animation/curve',
+    'pages/animation/fill',
   ],
   window: {
     backgroundTextStyle: 'light',

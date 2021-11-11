@@ -106,7 +106,6 @@ linear - 规定从开始到结束的速度相同的动画
 ease-in - 规定慢速开始的动画
 ease-out - 规定慢速结束的动画
 ease-in-out - 指定开始和结束较慢的动画
-cubic-bezier(n,n,n,n) - 运行您在三次贝塞尔函数中定义自己的值
 */
 .animation_curve {
   width: 100px;
@@ -120,4 +119,30 @@ cubic-bezier(n,n,n,n) - 运行您在三次贝塞尔函数中定义自己的值
 @keyframes mymove {
   from {left: 0px;}
   to {left: 300px;}
+}
+
+/*动画的填充样式
+animation-fill-mode枚举值：
+none - 默认值 动画结束后 恢复到初始状态（不是动画的初始状态）
+forwards - 保留动画关键帧的最后一帧的状态。(animation-direction和animation-iteration-count会对最后的关键帧产生影响)
+backwards - 元素将获取由第一个关键帧设置的样式值（取决于 animation-direction），并在动画延迟期间保留该值。
+both - 动画开始的时候会保留动画开始的第一帧属性，动画结束后会保留动画结束的最后一帧属性。
+*/
+.animation_fill {
+  width: 100px;
+  height: 100px;
+  margin-top: 0px;
+  background: red;
+  position: relative;
+  animation-name: animation_fill_keyframes;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  //animation-direction: normal;
+  //animation-iteration-count: 2;
+  animation-delay: 2s;
+}
+
+@keyframes animation_fill_keyframes {
+  from {margin-top: 100px; background-color: yellow}
+  to {margin-top: 300px; background-color: #A56C00}
 }
