@@ -35,6 +35,30 @@
           "pathName": "pages/animation/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/animation/imageanimation",
+          "pathName": "pages/animation/imageanimation",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/3D/transform",
+          "pathName": "pages/animation/3D/transform",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/discrete/index",
+          "pathName": "pages/animation/discrete/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/animation/3D/transform",
+          "pathName": "pages/animation/3D/transform",
+          "query": "",
+          "scene": null
         }
       ]
     }

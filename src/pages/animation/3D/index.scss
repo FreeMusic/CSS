@@ -1,0 +1,74 @@
+.stage {
+  width: 100%;
+  height: 100%;
+  background: url("https://www.w3cplus.com/sites/default/files/blogs/2013/1311/bg.jpg") repeat center center;
+  //定义perspective：属性定义3D元素距离视图的距离，单位是像素；子元素会获得透视效果，而不是元素本身；只影响3D元素。
+  perspective: 300px;
+  //perspective-origin: top;
+}
+
+.slop {
+  transform:rotateX(0deg);
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.container:hover {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {transform: rotateY(0deg)}
+  to {transform: rotateY(360deg)}
+}
+
+.side {
+  background: rgba(142,198,63,0.3);
+  border: 2px solid #8ec63f;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  height: 196px;
+  line-height: 196px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  width: 196px;
+}
+
+.rate {
+  transform: rotateX(50deg);
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform:translateZ(-100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}

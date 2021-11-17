@@ -9,6 +9,9 @@ export default {
     'pages/animation/direction',
     'pages/animation/curve',
     'pages/animation/fill',
+    'pages/animation/imageanimation',
+    'pages/animation/3D/transform',
+    'pages/animation/discrete/index',
   ],
   window: {
     backgroundTextStyle: 'light',

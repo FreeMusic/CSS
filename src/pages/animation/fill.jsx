@@ -4,7 +4,7 @@ import './index.scss'
 function Index() {
 
   return (
-    <View className='index height100'>
+    <View className='height100'>
       <View className='animation_fill'>
 
       </View>

@@ -146,3 +146,14 @@ both - 动画开始的时候会保留动画开始的第一帧属性，动画结�
   from {margin-top: 100px; background-color: yellow}
   to {margin-top: 300px; background-color: #A56C00}
 }
+
+.animation_gif {
+  animation-name: tw_gif;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tw_gif {
+  from {margin-left: 0px; margin-top: 0}
+  to {margin-left: 200px; margin-top: 294px}
+}

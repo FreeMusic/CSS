@@ -15,6 +15,9 @@ function Index() {
       {title: '动画的播放方向', routeUrl: '/pages/animation/direction'},
       {title: '动画的速度曲线', routeUrl: '/pages/animation/curve'},
       {title: '动画的填充样式', routeUrl: '/pages/animation/fill'},
+      {title: '图片动画', routeUrl: '/pages/animation/imageanimation'},
+      {title: '3D动画', routeUrl: '/pages/animation/3D/transform'},
+      {title: '离散3D动画', routeUrl: '/pages/animation/discrete/index'},
     ])
   })
 
